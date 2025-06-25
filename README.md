@@ -1,4 +1,6 @@
 # Astro Starter Kit: Basics
+URL: https://script-sha.netlify.app/
+
 
 ```sh
 npm create astro@latest -- --template basics
