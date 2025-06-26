@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import "../styles/global.css";
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 const pagetitle = 'Home | Astro Basics ';
@@ -6,9 +8,8 @@ const pagetitle = 'Home | Astro Basics ';
 
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+	<Navigation />
+
 	<main>
 		<section id="hero">
 			<a href="https://astro.build"
