@@ -1,13 +1,11 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import '../styles/global.css';
-const pageTitle = 'My Astro Learning Blog page'
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Blog Page";
 ---
 <body>
-  <Navigation />
+<BaseLayout pageTitle={pageTitle}>
 
-  <h1>My Astro Site</h1>
-  <h1>{pageTitle}</h1>
+
   <h2>... and my new Astro site!</h2>
 
   <h1>My Astro Learning Blog</h1>
@@ -17,4 +15,7 @@ const pageTitle = 'My Astro Learning Blog page'
       <li><a href="/posts/post-2/">Post 2</a></li>
       <li><a href="/posts/post-3/">Post 3</a></li>
     </ul>
+  </BaseLayout>
+  
+ 
 </body>

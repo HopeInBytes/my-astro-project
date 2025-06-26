@@ -3,8 +3,7 @@
   This is a multi-line comment
   inside the frontmatter
 */
-import Navigation from '../components/Navigation.astro';
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About Me";
 const identity = {
   firstName: "Pratiksha",
@@ -40,12 +39,10 @@ const textCase = "uppercase";
     </style>
   </head>
   <body>
-    <Navigation />
-    <h1>About Me</h1>
-    <h1>{pageTitle} | Astro</h1>
-    <h2>... and my new Astro site!</h2>
-
-    <p>
+    
+    <BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+   <p>
       I am working through Astro's introductory tutorial. This is the second
       page on my website, and it's the first one I built myself!
     </p>
@@ -84,5 +81,9 @@ const textCase = "uppercase";
         <p>My goal is not 3 days.</p>
       )
     }
+
+</BaseLayout>
+   
+   
   </body>
 </html>
